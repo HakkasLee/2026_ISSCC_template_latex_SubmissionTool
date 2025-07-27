@@ -1,0 +1,84 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Template Copyright© Li Junlin@USTC Dig-RF Group
+%ReleaseVersion: V1.0 Date: 2025/7/27
+%To find more imformation or release: https://github.com/HakkasLee
+%Contact: lizi371@mail.ustc.edu.cn
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Attention Please！！！
+
+%This template is intended solely as an aid for paper submission. Please refer to the official ISSCC website for the standard submission format. Users of this template are responsible for verifying that the template format complies with ISSCC submission requirements.
+
+%Attention Please！！！
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt,a4paper]{article} % 12pt font size and A4 paper size
+
+% === Required packages ===
+\usepackage{setspace}       % For line spacing
+\usepackage{geometry}       % For setting page margins
+\usepackage{fontspec}       % For using system fonts (XeLaTeX/LuaLaTeX)
+\usepackage{parskip}        % To remove paragraph indentation
+\usepackage{cite}           % For managing citations in IEEE style
+\usepackage{graphicx}       % For including images
+
+\pagestyle{empty}           % Remove page numbers
+
+% === Font settings ===
+\setmainfont[Path = font/,
+  BoldFont = ArialNarrowBold.otf,
+  ItalicFont = ArialNarrowItalic.otf
+]{ArialNarrow.otf}
+
+% === Page layout ===
+\geometry{left=2.54cm, right=2.54cm, top=2.40cm, bottom=2.40cm}
+
+% === Line spacing ===
+\setstretch{2} % Double spacing
+
+% === Paragraph spacing ===
+\setlength{\parskip}{0pt plus 0pt minus 0pt}
+
+% === Graphics path ===
+\graphicspath{{figs/}}
+
+\begin{document}
+
+\textbf{ISSCC Sample Manuscript (June-2025)}
+
+[Placeholder for Author List] 
+
+[Placeholder for Affiliations]
+
+Write your main paper here.
+
+\clearpage
+
+only the former pages are useful
+
+\clearpage
+
+%%%======================================================
+%%% Reference Section
+%%%======================================================
+\begin{thebibliography}{99}
+\setlength{\itemsep}{0pt}
+
+\bibitem{Giannini-isscc19}
+V. Giannini et al., ``A 192-Virtual-Receiver 77/79GHz GMSK Code-Domain MIMO Radar System-on-Chip,'' 
+\textit{ISSCC}, pp. 164-166, Feb. 2019.
+
+\vspace{-0.4\baselineskip} 
+
+\end{thebibliography}
+
+
+
+
+
+
+
+
+
+
+\end{document}

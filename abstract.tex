@@ -1,0 +1,84 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Template Copyright© Li Junlin@USTC Dig-RF Group
+%ReleaseVersion: V1.0 Date: 2025/7/27
+%To find more imformation or release: https://github.com/HakkasLee
+%Contact: lizi371@mail.ustc.edu.cn
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Attention Please！！！
+
+%This template is intended solely as an aid for paper submission. Please refer to the official ISSCC website for the standard submission format. Users of this template are responsible for verifying that the template format complies with ISSCC submission requirements.
+
+%Attention Please！！！
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Template Specification:
+% - Paper size: US Letter (8.5 x 11 inches)
+% - Margins: Top 2.4 cm, Bottom 0.49 cm, Left 2.54 cm, Right 2.54 cm
+% - First paragraph:
+%     * Space before: 10 pt, space after: 0 pt
+%     * Single line spacing
+%     * Font: Arial-Bold (loaded from /font/Arial-Bold.ttf)
+% - Second paragraph:
+%     * Space before: 9.15 pt, space after: 0 pt
+%     * Line spacing: 1.08
+%     * Font: Arial Regular (loaded from /font/arial.ttf)
+% - Top margin fine-tuned: baseline offset down 18 pt for visual balance
+% - Compiled with XeLaTeX or LuaLaTeX
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{article}
+
+% ==== Geometry settings ====
+\usepackage[paper=letterpaper,
+            top=2.4cm,
+            bottom=0.49cm,
+            left=2.54cm,
+            right=2.54cm,
+            includehead=false,
+            includefoot=false,
+            nomarginpar]{geometry}
+
+\usepackage{setspace}
+\setlength{\parindent}{0pt} % no indent
+
+% ==== Fine-tune top offset ====
+\makeatletter
+\setlength{\topskip}{18pt}   % move text down (~6mm)
+\setlength{\headheight}{0pt}
+\setlength{\headsep}{0pt}
+\setlength{\voffset}{0pt}
+\makeatother
+
+% ==== Font setup ====
+\usepackage{fontspec} % enable system fonts
+\newfontfamily\arialfont[Path=font/]{arial.ttf} % Arial regular
+\newfontfamily\arialboldfont[Path=font/]{Arial-Bold.ttf} % Arial bold
+
+% ==== Paragraph environments ====
+\newenvironment{firstpara}{
+  \vspace*{10pt}   % 10pt before
+  \setstretch{1.0}
+}{\vspace{0pt}}
+
+\newenvironment{secondpara}{
+  \vspace*{9.15pt} % 9.15pt before
+  \setstretch{1.08}
+}{\vspace{0pt}}
+
+\begin{document}
+
+\begin{firstpara}
+{\arialboldfont % apply Arial-Bold only in this block
+Abstract: 
+}
+\end{firstpara}
+
+\begin{secondpara}
+{\arialfont % apply Arial regular only in this block
+Write your abstract here.
+}
+\end{secondpara}
+
+\end{document}
