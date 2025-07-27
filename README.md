@@ -13,7 +13,7 @@
 
 ---
 
-## ⚠️ Attention Please
+##  Attention Please
 
 This template is intended solely as an aid for paper submission.  
 Please refer to the official **ISSCC website** for the standard submission format.  
@@ -21,7 +21,7 @@ Users of this template are responsible for verifying that the template format co
 
 ---
 
-## 📑 Table of Contents
+##  Table of Contents
 
 - [Features](#-features)
 - [Usage](#-usage)
@@ -31,7 +31,7 @@ Users of this template are responsible for verifying that the template format co
 
 ---
 
-## ✨ Features
+##  Features
 
 - Compatible with **ISSCC submission** format
 - Pre-configured fonts, margins, and reference style
@@ -40,7 +40,7 @@ Users of this template are responsible for verifying that the template format co
 
 ---
 
-## 🚀 Usage
+##  Usage
 
 1. Clone the repository:  
    ```bash
